@@ -78,7 +78,7 @@
         "type": "color"
       },
       "white": {
-        "value": "#ffff22",
+        "value": "#ffffff",
         "type": "color"
       },
       "gray": {
@@ -141,7 +141,7 @@
           "type": "color"
         },
         "600": {
-          "value": "#01fbed",
+          "value": "#e53e3e",
           "type": "color"
         },
         "700": {
