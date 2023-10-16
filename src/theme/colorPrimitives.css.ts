@@ -1,4 +1,4 @@
-import data from '../../export-tokens.json';
+import data from '../../tokens/export-tokens.json';
 
 export const colorPrimitives = {
     brand: {
