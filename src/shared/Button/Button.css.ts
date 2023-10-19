@@ -1,7 +1,9 @@
+import { dimensions } from "@/theme/assets/dimensions.css";
 import { style } from "@vanilla-extract/css";
 
 export const baseButton = style({
-    padding: '8px 16px',
+    // padding: '8px 16px',
+    padding: `${dimensions.sm}px`,
     display: 'inline-flex',
     alignItems: 'center',
     border: '1px solid #d6d6d6',

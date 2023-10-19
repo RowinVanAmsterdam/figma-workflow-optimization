@@ -1,0 +1,14 @@
+{
+    "source": ["tokens/**/*.json"],
+    "fileHeader": "/* Do not edit directly, this file was auto-generated */",
+    "platforms": {
+      "scss": {
+        "transformGroup": "scss",
+        "buildPath": "build/",
+        "files": [{
+          "destination": "scss/_variables.scss",
+          "format": "scss/variables"
+        }]
+      }
+    }
+  }
