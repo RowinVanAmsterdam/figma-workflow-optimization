@@ -4,7 +4,7 @@ const StyleDictionary = require('style-dictionary');
 registerTransforms(StyleDictionary);
 
 const sd = StyleDictionary.extend({
-  source: ['tokens/export-tokens.json'],
+  source: ['./tokens/transformed-tokens.json'],
   platforms: {
     js: {
       transformGroup: 'tokens-studio',

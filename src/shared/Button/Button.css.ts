@@ -3,7 +3,7 @@ import { style } from "@vanilla-extract/css";
 
 export const baseButton = style({
     // padding: '8px 16px',
-    padding: `${dimensions.sm}px`,
+    padding: dimensions.sm,
     display: 'inline-flex',
     alignItems: 'center',
     border: '1px solid #d6d6d6',

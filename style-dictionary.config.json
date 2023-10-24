@@ -1,0 +1,27 @@
+{
+    "source": ["**/*.json"],
+    "fileHeader": "/* Do not edit directly, this file was auto-generated */",
+    "platforms": {
+        "css": {
+            "transformGroup": "tokens-studio",
+            "prefix": "sd",
+            "buildPath": "build/css/",
+            "files": [
+                {
+                    "destination": "_variables.css",
+                    "format": "css/variables"
+                }
+            ]
+        },
+        "js": {
+            "transformGroup": "tokens-studio",
+            "buildPath": "build/js/",
+            "files": [
+                {
+                    "destination": "variables.js",
+                    "format": "javascript/es6"
+                }
+            ]
+        }
+    }
+}

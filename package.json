@@ -7,13 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate:tokens": "style-dictionary build --config ./sd-config.json"
+    "transform:tokens": "npx token-transformer ./tokens/export-tokens.json ./tokens/transformed-tokens.json --expandTypography --expandShadow",
+    "transform:tokens-multi-files-example": "npx token-transformer ./tokens/export-tokens.json tokens/global.json global && npx token-transformer ./tokens/export-tokens.json tokens/light.json global,light,theme global && npx token-transformer ./tokens/export-tokens.json tokens/dark.json global,dark,theme global",
+    "generate:tokens": "ts-node ./build.ts",
+    "generate:tokens-via-sd-transforms": "ts-node ./build-via-sd-transforms.ts"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.13.0",
     "next": "13.5.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "token-transformer": "^0.0.33"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^0.11.6",
