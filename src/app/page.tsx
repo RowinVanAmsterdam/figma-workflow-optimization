@@ -4,7 +4,9 @@ import * as styles from "./page.css";
 export default function Home() {
     return (
         <>
-            <h1 className={styles.container}>Hello world</h1>
+            <div className={styles.hero}>
+                <h1>Hello world</h1>
+            </div>
             <Button variant="primary">Click me</Button>
         </>
     );

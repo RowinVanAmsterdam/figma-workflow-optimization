@@ -1,21 +1,21 @@
-import { dimensions } from "@/theme/assets/dimensions.css";
+import { vars } from "@/theme/contract.css";
 import { style } from "@vanilla-extract/css";
 
 export const baseButton = style({
-    // padding: '8px 16px',
-    padding: dimensions.sm,
     display: 'inline-flex',
     alignItems: 'center',
     border: '1px solid #d6d6d6',
     textDecoration: 'none',
     borderRadius: '50px',
     cursor: 'pointer',
-    // color: vars.color.button.color,
+    padding: `${vars.spacings.md} ${vars.spacings.lg}`,
+    color: vars.color.button.color,
+    backgroundColor: vars.color.button.backgroundColor,
   
-    // ':hover': {
-    //   backgroundColor: vars.color.button.hover.backgroundColor,
-    //   color: vars.color.button.hover.color
-    // }
+    ':hover': {
+      color: vars.color.button.hover.color,
+      backgroundColor: vars.color.button.hover.backgroundColor
+    }
   });
 
 
