@@ -1,7 +1,7 @@
-import { generatedTheme } from "@/theme/theme.css";
 import "../assets/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { AppProviders } from "./AppProviders";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={`${generatedTheme} ${inter.className}`}>
-                <main>{children}</main>
+            <body className={`${inter.className}`}>
+                <AppProviders>{children}</AppProviders>
             </body>
         </html>
     );

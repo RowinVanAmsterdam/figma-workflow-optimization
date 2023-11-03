@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <div className={styles.hero}>
-                <h1>Hello world</h1>
+                <h1>Design Tokens - Workflow optimization</h1>
             </div>
             <Button variant="primary">Click me</Button>
         </>
