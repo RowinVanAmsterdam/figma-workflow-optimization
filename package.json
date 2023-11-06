@@ -39,11 +39,15 @@
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
     "@vanilla-extract/next-plugin": "2.3.1",
+    "@vanilla-extract/webpack-plugin": "^2.3.1",
+    "css-loader": "^6.8.1",
     "eslint": "^8.51.0",
     "eslint-config-next": "13.5.4",
     "eslint-plugin-storybook": "^0.6.15",
+    "mini-css-extract-plugin": "^2.7.6",
     "storybook": "^7.5.2",
     "style-dictionary": "^3.8.0",
+    "style-loader": "^3.3.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
