@@ -1,59 +1,41 @@
-const StyleDictionaryPackage = require("style-dictionary");
+import StyleDictionaryPackage from "style-dictionary";
+import { transformToEm } from "./helpers/transformToEm";
+import { transformToPixels } from "./helpers/transformToPixels";
 
-// HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
-
-/**
- * Helper: Transforms dimensions to px
- */
-function transformToPixels(value: string) {
-    if (value.endsWith("px")) {
-        return value;
-    }
-    return value + "px";
-}
+const sourcePath = "./src/design-tokens";
+const outputPath = "./src/design-tokens/generated";
+const tokenFilesToGenerate = ["design-tokens"];
+const tokensToPx = ["fontSize", "spacing", "borderRadius", "borderWidth", "sizing", "dimension"];
+const tokensToEm = ["letterSpacing"];
 
 /**
- * Helper: Transforms letter spacing % to em
- */
-function transformToEm(value: any) {
-    if (value.endsWith("%")) {
-        const percentValue = value.slice(0, -1);
-        return `${percentValue / 100}em`;
-    }
-    return value;
-}
-
-/**
- * Transform fontSizes to px
+ * Transform values to px
  */
 StyleDictionaryPackage.registerTransform({
     name: "size/px",
     type: "value",
-    matcher: function (prop: any) {
-        return ["fontSize", "spacing", "borderRadius", "borderWidth", "sizing", "dimension"].includes(prop.attributes.category);
-    },
+    matcher: (prop: any) => tokensToPx.includes(prop.attributes.category),
     transformer: (token: any) => transformToPixels(token.value.toString()),
 });
 
 /**
- * Transform letterSpacing to em
+// Transform values to em
  */
 StyleDictionaryPackage.registerTransform({
     name: "size/em",
     type: "value",
     transitive: true,
-    matcher: (token: any) => token.type === "letterSpacing",
+    matcher: (token: any) => tokensToEm.includes(token.type),
     transformer: (token: any) => transformToEm(token.value.toString()),
 });
 
 function getStyleDictionaryConfig(theme: string) {
-    console.log("theme", theme);
     return {
-        source: [`tokens/${theme}.json`],
+        source: [`${sourcePath}/${theme}.json`],
         platforms: {
             css: {
                 transforms: ["attribute/cti", "name/cti/kebab", "size/px", "size/em"],
-                buildPath: `output/css/`,
+                buildPath: `${outputPath}/css/`,
                 files: [
                     {
                         destination: `${theme}.css`,
@@ -63,9 +45,10 @@ function getStyleDictionaryConfig(theme: string) {
                 ],
             },
             js: {
+                name: "theme",
                 transformGroup: "js",
                 transforms: ["attribute/cti", "name/cti/pascal", "size/px", "size/em"],
-                buildPath: `output/js/`,
+                buildPath: `${outputPath}/js/`,
                 files: [
                     {
                         destination: `${theme}.js`,
@@ -79,9 +62,8 @@ function getStyleDictionaryConfig(theme: string) {
 
 console.log("Build started...");
 
-// PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
-
-["transformed-tokens"].map(function (theme) {
+// PROCESS THE DESIGN TOKENS FOR THE DIFFERENT BRANDS AND PLATFORMS
+tokenFilesToGenerate.map(function (theme) {
     console.log("\n==============================================");
     console.log(`\nProcessing: [${theme}]`);
 

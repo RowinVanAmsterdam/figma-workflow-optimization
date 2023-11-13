@@ -1,4 +1,4 @@
-import * as designTokens from "../../../output/js/transformed-tokens";
+import * as designTokens from '../../design-tokens/generated/js/design-tokens';
 import { fonts } from "../assets/fonts.css";
 
 export const mapDesignTokensToTheme = (tokens: typeof designTokens) => {

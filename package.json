@@ -7,22 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start:storybook": "npm run storybook",
-    "transform:tokens": "npx token-transformer ./tokens/export-tokens.json ./tokens/transformed-tokens.json --expandTypography --expandShadow",
-    "transform:tokens-multi-files-example": "npx token-transformer ./tokens/export-tokens.json tokens/global.json global && npx token-transformer ./tokens/export-tokens.json tokens/light.json global,light,theme global && npx token-transformer ./tokens/export-tokens.json tokens/dark.json global,dark,theme global",
-    "build:tokens": "ts-node ./build.ts",
-    "generate:tokens": "npm run transform:tokens && npm run build:tokens",
-    "--- Token studio ---": "",
-    "generate:tokens-via-sd-transforms": "ts-node ./build-via-sd-transforms.ts",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "start:dev": "npm run dev",
+    "start:storybook": "npm run storybook",
+    "transform:tokens": "npx token-transformer ./src/design-tokens/export-tokens.json ./src/design-tokens/design-tokens.json --expandTypography --expandShadow",
+    "build:tokens": "ts-node ./scripts/design-tokens/build-design-tokens.ts  && npm run remove:transformed-tokens",
+    "generate:tokens": "npm run transform:tokens && npm run build:tokens && npm run remove:transformed-tokens",
+    "remove:transformed-tokens": "rm -rf ./src/design-tokens/design-tokens.json"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.13.0",
     "next": "13.5.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "token-transformer": "^0.0.33"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.5.2",
@@ -34,7 +32,6 @@
     "@storybook/nextjs": "^7.5.2",
     "@storybook/react": "^7.5.2",
     "@storybook/testing-library": "^0.2.2",
-    "@tokens-studio/sd-transforms": "^0.11.6",
     "@types/node": "^20.8.6",
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
@@ -48,6 +45,7 @@
     "storybook": "^7.5.2",
     "style-dictionary": "^3.8.0",
     "style-loader": "^3.3.3",
+    "token-transformer": "^0.0.33",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

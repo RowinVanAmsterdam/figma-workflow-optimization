@@ -1,7 +1,7 @@
 import { createTheme } from '@vanilla-extract/css';
 import { vars } from './contract.css';
 import { mapDesignTokensToTheme } from './helpers/mapDesignTokensToTheme';
-import * as designTokens from '../../output/js/transformed-tokens'; 
+import * as designTokens from '../design-tokens/generated/js/design-tokens';
 
 export const generatedTheme = createTheme(vars, mapDesignTokensToTheme(designTokens) );
 export const generatedDarkTheme = createTheme(vars, mapDesignTokensToTheme(designTokens) );
