@@ -1,15 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Nov 2023 13:47:11 GMT
+ * Generated on Mon, 13 Nov 2023 15:09:14 GMT
  */
 
 export const ButtonPrimaryBackground = "#5a67d8";
 export const ButtonPrimaryText = "#ffffff";
 export const ButtonBorderRadius = 8;
-export const ButtonBorderWidth = 8;
+export const ButtonBorderWidth = "16px";
 export const CardBorderRadius = 8;
 export const CardBackground = "#1a202c";
-export const CardPadding = 16;
+export const CardPadding = "16px * 4px";
 export const BoxShadowDefault0X = 5;
 export const BoxShadowDefault0Y = 5;
 export const BoxShadowDefault0Spread = 3;
@@ -61,18 +61,12 @@ export const AccentDefault = "#5a67d8";
 export const AccentOnAccent = "#ffffff";
 export const AccentBg = "#434190";
 export const ShadowsDefault = "#0000004d";
-export const DimensionScale = "2px";
+export const DimensionScale = "4px";
 export const DimensionXs = "4px";
-export const DimensionSm = "8px";
-export const DimensionMd = "16px";
-export const DimensionLg = "32px";
-export const DimensionXl = "64px";
-export const SpacingXs = "4px";
-export const SpacingSm = "8px";
-export const SpacingMd = "16px";
-export const SpacingLg = "32px";
-export const SpacingXl = "64px";
-export const SpacingMultiValue = "8 64px";
+export const DimensionSm = "16px";
+export const DimensionMd = "16px * 4px";
+export const DimensionLg = "16px * 4px * 4px";
+export const DimensionXl = "16px * 4px * 4px * 4px";
 export const BorderRadiusSm = "4px";
 export const BorderRadiusLg = "8px";
 export const BorderRadiusXl = "16px";
@@ -194,6 +188,9 @@ export const FontSizesH6 = 16;
 export const FontSizesBody = 16;
 export const FontSizesSm = 13.6;
 export const FontSizesXs = 10.4;
+export const Spacing05 = "2px";
+export const Spacing1 = "4px";
+export const Spacing2 = "8px";
 export const TokenSetOrder0 = "core";
 export const TokenSetOrder1 = "light";
 export const TokenSetOrder2 = "dark";

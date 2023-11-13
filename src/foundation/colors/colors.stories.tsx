@@ -26,7 +26,7 @@ export const Colors: Story = {
                     style={{
                         display: "grid",
                         gridTemplateColumns: "repeat(3, 1fr)",
-                        // gap: vars.spacings["2s"],
+                        gap: vars.spacings["0.5"],
                         // marginBottom: vars.spacings["10s"],
                     }}>
                     <ColorCardHeader title="O500" subtitle="Brand orange" color={vars.color.red[100]} />

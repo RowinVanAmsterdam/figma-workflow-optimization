@@ -12,8 +12,8 @@
     "start:dev": "npm run dev",
     "start:storybook": "npm run storybook",
     "transform:tokens": "npx token-transformer ./src/design-tokens/export-tokens.json ./src/design-tokens/design-tokens.json --expandTypography --expandShadow",
-    "build:tokens": "ts-node ./scripts/design-tokens/build-design-tokens.ts  && npm run remove:transformed-tokens",
-    "generate:tokens": "npm run transform:tokens && npm run build:tokens && npm run remove:transformed-tokens",
+    "build:tokens": "ts-node ./scripts/design-tokens/build-design-tokens.ts && npm run remove:transformed-tokens",
+    "generate:tokens": "npm run transform:tokens && npm run build:tokens",
     "remove:transformed-tokens": "rm -rf ./src/design-tokens/design-tokens.json"
   },
   "dependencies": {

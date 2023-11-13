@@ -550,14 +550,16 @@
       }
     },
     "spacing": {
-      "0": {
-        "5": {
-          "value": "{dimension.scale}",
-          "type": "spacing"
-        }
+      "0.5": {
+        "value": "{dimension.scale} * 0.5",
+        "type": "spacing"
       },
       "1": {
         "value": "{dimension.scale}",
+        "type": "spacing"
+      },
+      "1.5": {
+        "value": "{dimension.scale} * 1.5",
         "type": "spacing"
       },
       "2": {

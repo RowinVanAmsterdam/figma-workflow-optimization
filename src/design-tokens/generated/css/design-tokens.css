@@ -1,16 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Nov 2023 13:47:11 GMT
+ * Generated on Mon, 13 Nov 2023 15:09:14 GMT
  */
 
 :root {
   --button-primary-background: #5a67d8;
   --button-primary-text: #ffffff;
   --button-border-radius: 8;
-  --button-border-width: 8;
+  --button-border-width: 16px;
   --card-border-radius: 8;
   --card-background: #1a202c;
-  --card-padding: 16;
+  --card-padding: 16px * 4px;
   --box-shadow-default-0-x: 5;
   --box-shadow-default-0-y: 5;
   --box-shadow-default-0-spread: 3;
@@ -62,18 +62,12 @@
   --accent-on-accent: #ffffff;
   --accent-bg: #434190;
   --shadows-default: #0000004d;
-  --dimension-scale: 2px;
+  --dimension-scale: 4px;
   --dimension-xs: 4px;
-  --dimension-sm: 8px;
-  --dimension-md: 16px;
-  --dimension-lg: 32px;
-  --dimension-xl: 64px;
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 32px;
-  --spacing-xl: 64px;
-  --spacing-multi-value: 8 64px;
+  --dimension-sm: 16px;
+  --dimension-md: 16px * 4px;
+  --dimension-lg: 16px * 4px * 4px;
+  --dimension-xl: 16px * 4px * 4px * 4px;
   --border-radius-sm: 4px;
   --border-radius-lg: 8px;
   --border-radius-xl: 16px;
@@ -195,6 +189,9 @@
   --font-sizes-body: 16;
   --font-sizes-sm: 13.6;
   --font-sizes-xs: 10.4;
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
   --token-set-order-0: core;
   --token-set-order-1: light;
   --token-set-order-2: dark;

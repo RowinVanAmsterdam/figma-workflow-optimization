@@ -43,11 +43,7 @@ export const mapDesignTokensToTheme = (tokens: typeof designTokens) => {
         },
         font: fonts,
         spacings: {
-            xs: designTokens.SpacingXs,
-            sm: designTokens.SpacingSm,
-            md: designTokens.SpacingMd,
-            lg: designTokens.SpacingLg,
-            xl: designTokens.SpacingXl,
+            0.5: designTokens.Spacing05,
         },
     };
 };

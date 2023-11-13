@@ -34,10 +34,6 @@ export const vars = createThemeContract({
     },
     font: fonts,
     spacings: {
-        xs: "",
-        sm: "",
-        md: "",
-        lg: "",
-        xl: "",
+        0.5: "",
     },
 });
