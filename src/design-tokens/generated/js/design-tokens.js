@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Nov 2023 15:09:14 GMT
+ * Generated on Mon, 13 Nov 2023 15:17:55 GMT
  */
 
 export const ButtonPrimaryBackground = "#5a67d8";
@@ -188,9 +188,11 @@ export const FontSizesH6 = 16;
 export const FontSizesBody = 16;
 export const FontSizesSm = 13.6;
 export const FontSizesXs = 10.4;
-export const Spacing05 = "2px";
 export const Spacing1 = "4px";
 export const Spacing2 = "8px";
+export const Spacing05 = "2px";
+export const Spacing15 = "6px";
+export const Spacing25 = "10px";
 export const TokenSetOrder0 = "core";
 export const TokenSetOrder1 = "light";
 export const TokenSetOrder2 = "dark";

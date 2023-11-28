@@ -1,4 +1,18 @@
-# Figma <> Dev 
+# Figma-to-Code Optimization Playground
+
+This project explores innovative approaches to optimize the workflow between Figma design and code implementation. The experimentation involved the following steps:
+
+Design Token Creation: Utilizing Figma variables in both Figma itself and token.studio to define design tokens.
+
+Repository Integration: The design tokens were exported to this code repository in JSON format.
+
+Token Transformation Script: A script was developed to convert the JSON design tokens into a format suitable for practical use.
+
+Integration with vanilla-extract: The transformed tokens were integrated into the codebase using vanilla-extract, enhancing maintainability and consistency.
+
+Storybook Showcase: The tokens were showcased and tested through Storybook, providing a visual representation of the design system components.
+
+This project serves as a testing ground for optimizing the collaboration between Figma and code, streamlining the design-to-development process for increased efficiency and consistency. Feel free to explore and contribute! 🚀
 
 ## Getting Started
 

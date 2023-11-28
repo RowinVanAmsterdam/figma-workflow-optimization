@@ -3,7 +3,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 
 const textColor = "#23282A";
 
-export const colorCardHeader = style({
+export const colorCard = style({
   border: "1px solid #CACBCC",
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
@@ -12,7 +12,7 @@ export const colorCardHeader = style({
   minHeight: "75px",
 });
 
-globalStyle(`${colorCardHeader} > div:last-child`, {});
+globalStyle(`${colorCard} > div:last-child`, {});
 
 export const headerBackground = style({
   width: "100%",
@@ -21,9 +21,10 @@ export const headerBackground = style({
 
 export const headerTitleWrapper = style({
   display: "flex",
-//   gap: vars.spacings["0,5s"],
+  gap: vars.spacings["1"],
   flexDirection: "column",
-//   padding: vars.spacings["1s"],
+  padding: `${vars.spacings["1"]} ${vars.spacings["1"]} ${vars.spacings["1"]} ${vars.spacings["2"]}`,
+  justifyContent: "center",
 });
 
 export const headerTitle = style({

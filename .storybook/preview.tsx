@@ -13,17 +13,24 @@ const preview: Preview = {
         },
         options: {
             storySort: {
-              method: "",
-              order: ["Foundation", "Components"],
-              locales: "",
+                method: "",
+                order: ["Foundation", "Components"],
+                locales: "",
             },
-          },
+        },
     },
-    
+
     decorators: [
         (Story) => (
             <AppProviders>
-                <Story />
+                <div
+                    className="custom-story-wrapper"
+                    style={{
+                        maxWidth: "1000px",
+                        margin: "0 auto",
+                    }}>
+                    <Story />
+                </div>
             </AppProviders>
         ),
     ],

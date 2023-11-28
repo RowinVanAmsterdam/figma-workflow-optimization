@@ -1,7 +1,7 @@
 import { createThemeContract } from "@vanilla-extract/css";
-import { fonts } from "./assets/fonts.css";
+import { Spacings } from "./assets/Spacings";
 
-const colorShades = {
+const colorShadeProperties = {
     100: "",
     200: "",
     300: "",
@@ -13,12 +13,19 @@ const colorShades = {
     900: "",
 };
 
+const headerProperties = {
+    fontFamily: "",
+    fontSize: "",
+    lineHeight: "",
+};
+
 export const vars = createThemeContract({
     color: {
         black: "",
         white: "",
-        red: colorShades,
-        blue: colorShades,
+        red: colorShadeProperties,
+        blue: colorShadeProperties,
+        gray: colorShadeProperties,
         background: "",
         font: "",
         link: "",
@@ -32,8 +39,24 @@ export const vars = createThemeContract({
         },
         divider: "",
     },
-    font: fonts,
-    spacings: {
-        0.5: "",
+    font: {
+        headings: "",
+        body: "",
     },
+    typography: {
+        header1: headerProperties,
+        header2: headerProperties,
+        header3: headerProperties,
+        header4: headerProperties,
+        header5: headerProperties,
+        header6: headerProperties,
+    },
+    breakpoints: {
+        xs: "",
+        m: "",
+        l: "",
+        xl: "",
+        xxl: "",
+    },
+    spacings: Spacings
 });
