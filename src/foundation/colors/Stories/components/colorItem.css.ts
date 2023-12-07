@@ -3,12 +3,16 @@ import { style } from "@vanilla-extract/css";
 
 export const colorItem = style({
     display: "flex",
-    alignItems: "center",
     marginBottom: vars.spacings[4],
 });
 
 export const colorItemNaming = style({
     flex: "0 0 30%",
+});
+
+export const colorClass = style({
+    textTransform: "lowercase",
+    color: vars.color.neutral[600]
 });
 
 export const colorItemSwatches = style({
@@ -26,4 +30,9 @@ export const colorItemSwatchesList = style({
 export const swatchColorPane = style({
     width: "100%",
     height: vars.spacings[12],
+});
+
+export const colorName = style({
+    textAlign: "center",
+    marginTop: vars.spacings[0.5],
 });

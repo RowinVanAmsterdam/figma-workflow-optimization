@@ -67,3 +67,55 @@ export const mb10 = style({
  ** Margin Top
  */
 
+export const mt1 = style({
+    marginTop: vars.spacings[1],
+});
+
+export const mt2 = style({
+    marginTop: vars.spacings[2],
+});
+
+export const mt3 = style({
+    marginTop: vars.spacings[3],
+});
+
+export const mt4 = style({
+    marginTop: vars.spacings[4],
+});
+
+export const mt5 = style({
+    marginTop: vars.spacings[5],
+});
+
+export const mt6 = style({
+    marginTop: vars.spacings[6],
+});
+
+export const mt7 = style({
+    marginTop: vars.spacings[7],
+});
+
+export const mt8 = style({
+    marginTop: vars.spacings[8],
+});
+
+export const mt9 = style({
+    marginTop: vars.spacings[9],
+});
+
+export const mt10 = style({
+    marginTop: vars.spacings[10],
+});
+
+export const mt11 = style({
+    marginTop: vars.spacings[11],
+});
+
+export const mt12 = style({
+    marginTop: vars.spacings[12],
+});
+
+export const mt14 = style({
+    marginTop: vars.spacings[14],
+});
+

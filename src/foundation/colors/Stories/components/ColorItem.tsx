@@ -29,14 +29,14 @@ export const ColorItem = (props: ColorItemProps) => {
     return (
         <div className={styles.colorItem}>
             <div className={styles.colorItemNaming}>
-                <Typography>{colorName}</Typography>
-                <Typography variant="text-sm">{colorClass}</Typography>
+                <Typography >{colorName}</Typography>
+                <Typography variant="text-sm" className={styles.colorClass}>{colorClass}</Typography>
             </div>
 
             <section className={styles.colorItemSwatches}>
                 <ul className={styles.colorItemSwatchesList}>
                     {colors.map((color: ColorProps, index: number) => (
-                        <li style={{ width: "100%" }}>
+                        <li key={color.name} style={{ width: "100%" }}>
                             <Tooltip key={color.name} content={tooltipContent} onMouseLeave={() => setTooltipContent(defaultTooltipContent)}>
                                 <div
                                     className={styles.swatchColorPane}
@@ -54,7 +54,7 @@ export const ColorItem = (props: ColorItemProps) => {
                                     onClick={() => handleCopy(color.value)}
                                 />
 
-                                <Typography variant="text-xs" style={{ textAlign: "center" }}>{color.name}</Typography>
+                                <Typography variant="text-xs" className={styles.colorName}>{color.name}</Typography>
                             </Tooltip>
                         </li>
                     ))}

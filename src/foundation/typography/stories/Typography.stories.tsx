@@ -5,7 +5,7 @@ import { TypographyStoriesComponent } from "./TypographyStoriesComponent";
 import { StoryHeader } from "@/shared/Stories/StoryHeader";
 
 const meta: Meta<typeof Typography> = {
-    title: "foundation/Typography Improved",
+    title: "foundation/Typography - size based",
     argTypes: {
         fontWeight: {
             options: ["light", "regular", "medium", "bold"],
@@ -38,7 +38,7 @@ export const Variants: Story = {
 
         return (
             <>
-                <StoryHeader>Typography Improved</StoryHeader>
+                <StoryHeader>Typography - size based</StoryHeader>
                 <ul className={styles.typographyList}>
                     <TypographyStoriesComponent component={args.component} variant="text-9xl" sampleText={sampleText} fontWeight={args.fontWeight} />
                     <TypographyStoriesComponent component={args.component} variant="text-8xl" sampleText={sampleText} fontWeight={args.fontWeight} />
