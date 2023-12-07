@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { mb10 } from "../margin.css";
 import { vars } from "@/theme/contract.css";
 import { Typography } from "../../typography/Typography";
-import { Spacings } from "@/theme/assets/Spacings";
+import { spacings } from "@/theme/assets/spacings";
 import * as styles from "./spacing.stories.css";
 import { mergeClassNames } from "@/utils/mergeClassNames";
 import { StoryHeader } from "@/shared/Stories/StoryHeader";
 
-type Story = StoryObj<typeof Typography>;
+type Story = StoryObj<any>;
 
-const meta: Meta<typeof Typography> = {
+const meta: Meta = {
     title: "foundation/Spacings",
 };
 
@@ -20,9 +20,9 @@ const pxToRem = (pxValue: number, baseFontSize: number = 16): string => {
     return `${remValue}rem`;
 };
 
-const spacingKeys = Object.keys(Spacings)
+const spacingKeys = Object.keys(spacings)
     .map(parseFloat)
-    .sort((a, b) => a - b) as Array<keyof typeof Spacings>;
+    .sort((a, b) => a - b) as Array<keyof typeof spacings>;
 
 const TableHeadCell = (props: { children: React.ReactNode; className?: string }) => {
     return (
@@ -62,17 +62,17 @@ export const Spacing: Story = {
                                     {String(key)}
                                 </Typography>
                                 <Typography component="td" className={styles.tableCell}>
-                                    {pxToRem(parseInt(Spacings[key]))}
+                                    {pxToRem(parseInt(spacings[key]))}
                                 </Typography>
                                 <Typography component="td" className={styles.tableCell}>
-                                    {Spacings[key]}
+                                    {spacings[key]}
                                 </Typography>
                                 <td>
                                     <div
                                         style={{
-                                            width: Spacings[key],
+                                            width: spacings[key],
                                             height: vars.spacings[4],
-                                            backgroundColor: vars.color.blue[500],
+                                            backgroundColor: vars.color.brand.blue[500],
                                             borderRadius: vars.spacings["0.5"],
                                         }}
                                     />

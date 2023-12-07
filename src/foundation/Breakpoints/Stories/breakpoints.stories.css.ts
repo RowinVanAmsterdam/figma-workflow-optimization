@@ -8,25 +8,13 @@ export const table = style({
 });
 
 export const tableHeadRow = style({
-
     borderBottom: `2px solid ${vars.color.neutral["300"]}`,
 });
 
 export const tableHeadCell = style({
     paddingBottom: vars.spacings[2],
     textAlign: "left",
-});
-
-export const tableHeadCellName = style({
-    paddingRight: vars.spacings[8],
-});
-
-export const tableHeadCellSize = style({
-    paddingRight: vars.spacings[20],
-});
-
-export const tableHeadCellPixels = style({
-    paddingRight: vars.spacings[6],
+    paddingRight: vars.spacings[10],
 });
 
 export const tableRow = style({

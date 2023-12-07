@@ -5,18 +5,17 @@ import { useState } from "react";
 
 type ColorCardProps = {
     title: string;
-    subtitle?: string;
+    valueToCopy?: string;
     color: string;
-    dark?: boolean;
 };
 
 export const ColorCard = (props: ColorCardProps) => {
-    const { title, subtitle, color } = props;
+    const { title, color, valueToCopy } = props;
     const defaultTooltipContent = "Click to copy";
     const [tooltipContent, setTooltipContent] = useState<string>(defaultTooltipContent);
 
     const handleCopy = () => {
-        navigator.clipboard.writeText(`${color}`);
+        navigator.clipboard.writeText(`${valueToCopy ? valueToCopy : color}`);
         setTooltipContent("Copied");
     };
 
@@ -27,7 +26,7 @@ export const ColorCard = (props: ColorCardProps) => {
                     <Typography fontWeight="bold" variant="text-sm">
                         {title}
                     </Typography>
-                    <Typography>{subtitle}</Typography>
+                    <Typography variant="text-sm">{color}</Typography>
                 </div>
                 <div>
                     <div className={headerBackground} style={{ backgroundColor: color }}></div>

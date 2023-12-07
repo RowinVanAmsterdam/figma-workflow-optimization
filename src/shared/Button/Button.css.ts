@@ -8,14 +8,14 @@ export const baseButton = style({
     textDecoration: 'none',
     borderRadius: '50px',
     cursor: 'pointer',
-    padding: `${vars.spacings.md} ${vars.spacings.lg}`,
-    color: vars.color.button.color,
-    backgroundColor: vars.color.button.backgroundColor,
+    // padding: `${vars.spacings.md} ${vars.spacings.lg}`,
+    // color: vars.color.button.color,
+    // backgroundColor: vars.color.button.backgroundColor,
   
-    ':hover': {
-      color: vars.color.button.hover.color,
-      backgroundColor: vars.color.button.hover.backgroundColor
-    }
+    // ':hover': {
+    //   color: vars.color.button.hover.color,
+    //   backgroundColor: vars.color.button.hover.backgroundColor
+    // }
   });
 
 

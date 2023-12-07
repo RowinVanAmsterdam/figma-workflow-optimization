@@ -9,6 +9,5 @@ export const typographyList = style({
 });
 
 export const typographySubtitle = style({
-    color: vars.color.gray["600"],
-    textTransform: "lowercase",
+    color: vars.color.neutral["600"],
 });

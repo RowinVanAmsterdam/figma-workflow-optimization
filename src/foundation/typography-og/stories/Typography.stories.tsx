@@ -1,10 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Typography } from "../Typography";
-import { mergeClassNames } from "@/utils/mergeClassNames";
-import { blockWithDottedBorder, separator } from "@/utils/storybook-utils.css";
-import { p2 } from "../../spacing/padding.css";
-import { mb10 } from "../../spacing/margin.css";
-import { vars } from "@/theme/contract.css";
 import { TypographyStoriesComponent } from "./TypographyStoriesComponent";
 import * as styles from "./typography.stories.css";
 import { StoryHeader } from "@/shared/Stories/StoryHeader";
@@ -22,8 +17,6 @@ const meta: Meta<typeof Typography> = {
 export default meta;
 
 type Story = StoryObj<typeof Typography>;
-
-const paddedDottedBlocks = mergeClassNames(blockWithDottedBorder, p2);
 
 const sampleHeading = "The quick brown fox jumps over the lazy dog";
 const sampleBody =

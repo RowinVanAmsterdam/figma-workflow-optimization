@@ -85,21 +85,21 @@ export const Tooltip = (props: TooltipProps) => {
     }, [isVisible, onHide, onToggle, triggerType]);
 
     return (
-        <div className={styles.tooltipContainer} ref={triggerRef}>
-            <div
+        <span className={styles.tooltipContainer} ref={triggerRef}>
+            <span
                 className={cursorClass}
                 onClick={triggerType === "click" ? handleTrigger : undefined}
                 onMouseEnter={triggerType === "hover" ? handleTrigger : undefined}
                 onMouseLeave={triggerType === "hover" ? handleMouseLeave : undefined}>
                 {children}
-            </div>
+            </span>
 
             {isVisible && (
-                <div className={tooltipClasses}>
+                <span className={tooltipClasses}>
                     {arrow && <div className={tooltipArrowClasses} />}
-                    <Typography>{content}</Typography>
-                </div>
+                    <Typography variant="text-xs">{content}</Typography>
+                </span>
             )}
-        </div>
+        </span>
     );
 };

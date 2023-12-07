@@ -9,6 +9,7 @@ export type TypographyProps = {
     className?: string;
     fontWeight?: "light" | "regular" | "medium" | "bold";
     ref?: React.Ref<HTMLElement>;
+    style?: React.CSSProperties;
 };
 
 type ClassNamesKey = NonNullable<TypographyProps["variant"]>;
@@ -54,14 +55,14 @@ const getFontWeightClass = (variant: TypographyProps["fontWeight"]) => {
 };
 
 export const Typography = forwardRef<HTMLElement, TypographyProps>((props, ref) => {
-    const { children, variant = defaultTypographyVariant, component, className, fontWeight } = props;
+    const { children, variant = defaultTypographyVariant, component, className, fontWeight, style } = props;
     const Component = component ? component : defaultTypographyComponent;
     const variantClass = classNamesRecord[variant as ClassNamesKey] ?? "";
     const fontFamilyClass = fontFamilyRecord[Component as VariantKey] ?? "";
     const classNames = mergeClassNames(className, variantClass, fontFamilyClass, getFontWeightClass(fontWeight));
 
     return (
-        <Component className={classNames} ref={ref}>
+        <Component className={classNames} ref={ref} style={{ ...style }}>
             {children}
         </Component>
     );

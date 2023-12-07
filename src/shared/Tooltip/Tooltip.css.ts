@@ -12,16 +12,15 @@ export const cursorPointer = style({
 
 export const tooltipContainer = style({
     position: 'relative',
-    display: 'inline-block',
     overflow: 'visible',
   });
 
 export const tooltip = style({
     position: "absolute",
     zIndex: 50,
-    backgroundColor: vars.color.gray[900],
+    backgroundColor: vars.color.neutral[900],
     color: "white",
-    padding: "0.5rem", // Adjust as needed
+    padding: "0.5rem",
     borderRadius: "0.25rem", 
     display: "inline-block",
     whiteSpace: "nowrap",
@@ -44,7 +43,7 @@ export const positionStyles = {
         bottom: "100%",
         left: "50%",
         transform: "translateX(-50%)",
-        marginBottom: "2rem",
+        marginBottom: vars.spacings[3],
     }),
     right: style({
         top: "50%",
@@ -52,7 +51,7 @@ export const positionStyles = {
         bottom: "auto",
         left: "100%",
         transform: "translateY(-50%)",
-        marginLeft: "2rem",
+        marginLeft: vars.spacings[3],
     }),
     bottom: style({
         top: "100%",
@@ -60,7 +59,7 @@ export const positionStyles = {
         bottom: "auto",
         left: "50%",
         transform: "translateX(-50%)",
-        marginTop: "2rem",
+        marginTop: vars.spacings[3],
     }),
     left: style({
         top: "50%",
@@ -68,7 +67,7 @@ export const positionStyles = {
         bottom: "auto",
         left: "auto",
         transform: "translateY(-50%)",
-        marginRight: "2rem",
+        marginRight: vars.spacings[3],
     }),
 };
 

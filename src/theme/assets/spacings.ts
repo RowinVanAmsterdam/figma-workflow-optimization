@@ -1,6 +1,6 @@
 import { Spacing05, Spacing1, Spacing2 } from "@/design-tokens/generated/js/design-tokens";
 
-export const Spacings = {
+export const spacings = {
     0: "0",
     0.5: Spacing05,
     1: Spacing1,
