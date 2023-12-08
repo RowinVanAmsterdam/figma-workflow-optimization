@@ -433,6 +433,46 @@
           "value": "#702459",
           "type": "color"
         }
+      },
+      "brand": {
+        "yellow": {
+          "100": {
+            "value": "#fff7be",
+            "type": "color"
+          },
+          "200": {
+            "value": "#fef193",
+            "type": "color"
+          },
+          "300": {
+            "value": "#fdec66",
+            "type": "color"
+          },
+          "400": {
+            "value": "#fbe73f",
+            "type": "color"
+          },
+          "500": {
+            "value": "#f9e200",
+            "type": "color"
+          },
+          "600": {
+            "value": "#fbd200",
+            "type": "color"
+          },
+          "700": {
+            "value": "#fab900",
+            "type": "color"
+          },
+          "800": {
+            "value": "#f9a000",
+            "type": "color"
+          },
+          "900": {
+            "value": "#f87300",
+            "type": "color"
+          }
+        }
       }
     },
     "opacity": {
