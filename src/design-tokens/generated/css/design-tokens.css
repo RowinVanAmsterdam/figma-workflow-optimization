@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Nov 2023 15:17:55 GMT
+ * Generated on Fri, 08 Dec 2023 13:58:04 GMT
  */
 
 :root {
@@ -88,7 +88,7 @@
   --colors-red-300: #feb2b2;
   --colors-red-400: #fc8181;
   --colors-red-500: #f56565;
-  --colors-red-600: #21d12d;
+  --colors-red-600: #e53e3e;
   --colors-red-700: #c53030;
   --colors-red-800: #9b2c2c;
   --colors-red-900: #742a2a;
@@ -164,6 +164,15 @@
   --colors-pink-700: #b83280;
   --colors-pink-800: #97266d;
   --colors-pink-900: #702459;
+  --colors-brand-yellow-100: #fff7be;
+  --colors-brand-yellow-200: #fef193;
+  --colors-brand-yellow-300: #fdec66;
+  --colors-brand-yellow-400: #fbe73f;
+  --colors-brand-yellow-500: #f9e200;
+  --colors-brand-yellow-600: #fbd200;
+  --colors-brand-yellow-700: #fab900;
+  --colors-brand-yellow-800: #f9a000;
+  --colors-brand-yellow-900: #f87300;
   --opacity-low: 10%;
   --opacity-md: 50%;
   --opacity-high: 90%;
@@ -189,11 +198,40 @@
   --font-sizes-body: 16;
   --font-sizes-sm: 13.6;
   --font-sizes-xs: 10.4;
-  --spacing-1: 4px;
-  --spacing-2: 8px;
-  --spacing-0-5: 2px;
-  --spacing-1-5: 6px;
-  --spacing-2-5: 10px;
+  --spacing-0: 0px;
+  --spacing-10: 4px;
+  --spacing-15: 6px;
+  --spacing-20: 8px;
+  --spacing-25: 10px;
+  --spacing-30: 12px;
+  --spacing-35: 14px;
+  --spacing-40: 16px;
+  --spacing-50: 20px;
+  --spacing-60: 24px;
+  --spacing-70: 28px;
+  --spacing-80: 32px;
+  --spacing-90: 36px;
+  --spacing-100: 40px;
+  --spacing-110: 44px;
+  --spacing-120: 48px;
+  --spacing-140: 56px;
+  --spacing-160: 64px;
+  --spacing-200: 80px;
+  --spacing-240: 96px;
+  --spacing-280: 112px;
+  --spacing-320: 128px;
+  --spacing-360: 144px;
+  --spacing-400: 160px;
+  --spacing-440: 176px;
+  --spacing-480: 192px;
+  --spacing-520: 208px;
+  --spacing-560: 224px;
+  --spacing-600: 240px;
+  --spacing-640: 256px;
+  --spacing-720: 288px;
+  --spacing-800: 320px;
+  --spacing-960: 384px;
+  --spacing-05: 2px;
   --token-set-order-0: core;
   --token-set-order-1: light;
   --token-set-order-2: dark;

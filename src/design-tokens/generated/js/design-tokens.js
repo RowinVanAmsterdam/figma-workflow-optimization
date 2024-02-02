@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Nov 2023 15:17:55 GMT
+ * Generated on Fri, 08 Dec 2023 13:58:04 GMT
  */
 
 export const ButtonPrimaryBackground = "#5a67d8";
@@ -87,7 +87,7 @@ export const ColorsRed200 = "#fed7d7";
 export const ColorsRed300 = "#feb2b2";
 export const ColorsRed400 = "#fc8181";
 export const ColorsRed500 = "#f56565";
-export const ColorsRed600 = "#21d12d";
+export const ColorsRed600 = "#e53e3e";
 export const ColorsRed700 = "#c53030";
 export const ColorsRed800 = "#9b2c2c";
 export const ColorsRed900 = "#742a2a";
@@ -163,6 +163,15 @@ export const ColorsPink600 = "#d53f8c";
 export const ColorsPink700 = "#b83280";
 export const ColorsPink800 = "#97266d";
 export const ColorsPink900 = "#702459";
+export const ColorsBrandYellow100 = "#fff7be";
+export const ColorsBrandYellow200 = "#fef193";
+export const ColorsBrandYellow300 = "#fdec66";
+export const ColorsBrandYellow400 = "#fbe73f";
+export const ColorsBrandYellow500 = "#f9e200";
+export const ColorsBrandYellow600 = "#fbd200";
+export const ColorsBrandYellow700 = "#fab900";
+export const ColorsBrandYellow800 = "#f9a000";
+export const ColorsBrandYellow900 = "#f87300";
 export const OpacityLow = "10%";
 export const OpacityMd = "50%";
 export const OpacityHigh = "90%";
@@ -188,11 +197,40 @@ export const FontSizesH6 = 16;
 export const FontSizesBody = 16;
 export const FontSizesSm = 13.6;
 export const FontSizesXs = 10.4;
-export const Spacing1 = "4px";
-export const Spacing2 = "8px";
-export const Spacing05 = "2px";
+export const Spacing0 = "0px";
+export const Spacing10 = "4px";
 export const Spacing15 = "6px";
+export const Spacing20 = "8px";
 export const Spacing25 = "10px";
+export const Spacing30 = "12px";
+export const Spacing35 = "14px";
+export const Spacing40 = "16px";
+export const Spacing50 = "20px";
+export const Spacing60 = "24px";
+export const Spacing70 = "28px";
+export const Spacing80 = "32px";
+export const Spacing90 = "36px";
+export const Spacing100 = "40px";
+export const Spacing110 = "44px";
+export const Spacing120 = "48px";
+export const Spacing140 = "56px";
+export const Spacing160 = "64px";
+export const Spacing200 = "80px";
+export const Spacing240 = "96px";
+export const Spacing280 = "112px";
+export const Spacing320 = "128px";
+export const Spacing360 = "144px";
+export const Spacing400 = "160px";
+export const Spacing440 = "176px";
+export const Spacing480 = "192px";
+export const Spacing520 = "208px";
+export const Spacing560 = "224px";
+export const Spacing600 = "240px";
+export const Spacing640 = "256px";
+export const Spacing720 = "288px";
+export const Spacing800 = "320px";
+export const Spacing960 = "384px";
+export const Spacing05 = "2px";
 export const TokenSetOrder0 = "core";
 export const TokenSetOrder1 = "light";
 export const TokenSetOrder2 = "dark";
