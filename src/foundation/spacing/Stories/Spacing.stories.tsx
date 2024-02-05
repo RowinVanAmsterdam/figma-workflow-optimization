@@ -72,7 +72,7 @@ export const Spacing: Story = {
                                         style={{
                                             width: spacings[key],
                                             height: vars.spacings[4],
-                                            backgroundColor: vars.color.brand.blue[500],
+                                            backgroundColor: vars.color.brand.yellow[500],
                                             borderRadius: vars.spacings["0.5"],
                                         }}
                                     />
